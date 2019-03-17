@@ -10,6 +10,11 @@ os:
   - linux
 #  - osx
 
+cache:
+  directories:
+    - $HOME/.cache
+    - $HOME/.bazel_repository_cache
+
 env:
   - V=0.21.0
 
