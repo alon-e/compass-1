@@ -54,10 +54,11 @@ script:
           //...
     fi
   # run HOW TO steps
+  - pwd
   - |
     if [[ "${TEST}" != "bazel" ]]; then
-      /bin/sh ci/setupTests.sh;
-      /bin/sh ci/$TEST.sh;
+      /bin/sh $HOME/ci/setupTests.sh;
+      /bin/sh $HOME/ci/$TEST.sh;
     fi
 
 notifications:
