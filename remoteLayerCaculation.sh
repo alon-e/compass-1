@@ -11,8 +11,8 @@ echo "starting remote layer calculation"
 
 echo "compare results"
 diff ../data/layers/layer.0.csv data/layers/layer.0.csv
-if ! diff -q ../data/layers/layer.0.csv data/layers/layer.0.csv &>/dev/null; then
-  >&2 echo "different"
+if diff -q ../data/layers/layer.0.csv data/layers/layer.0.csv &>/dev/null; then
+  >&2 echo "same"
   exit -1
 fi
 
