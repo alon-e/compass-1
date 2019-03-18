@@ -13,6 +13,7 @@ echo "compare results"
 diff ../data/layers/layer.0.csv data/layers/layer.0.csv
 if ! diff -q ../data/layers/layer.0.csv data/layers/layer.0.csv &>/dev/null; then
   >&2 echo "different"
+  exit -1
 fi
 
 echo "cleaning up"
