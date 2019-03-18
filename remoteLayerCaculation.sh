@@ -14,9 +14,9 @@ ROOT_TREE_REMOTE=`cat data/layers/layer.0.csv`
 diff ../data/layers/layer.0.csv data/layers/layer.0.csv
 if [ ${ROOT_TREE_REMOTE} = ${ROOT_TREE_LOCAL} ]; then
   >&2 echo "same";
-  exit -1
 else
   >&2 echo "different: ${ROOT_TREE_REMOTE} != ${ROOT_TREE_LOCAL}"
+  exit -1
 fi
 
 echo "cleaning up"
