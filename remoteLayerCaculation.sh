@@ -1,5 +1,6 @@
 #!/bin/sh
 cd docs/private_tangle
+mkdir remote && cd remote
 
 echo "starting Signing server"
 ./11_run_signature_source_server.sh &
